@@ -28,6 +28,26 @@ var array = [
     }
 ]
 
+var retornaLista = array => {
+    function filtrar(array) {
+        return array.idade >= 18 && array.idade <= 26;
+    }
+    return array.filter(filtrar)
+}
+
+console.log(retornaLista(array))
+
+/*
+module.exports.retornaLista = (array) => {
+    function filtrar(array) {
+        return array.idade >= 18 && array.idade <= 26;
+    }
+    return array.filter(filtrar)
+}
+*/
+
+
+/*
 var retornaLista = (array) => {
     var arrayFinal = [];    
     for (const cliente in array) {
@@ -37,18 +57,9 @@ var retornaLista = (array) => {
     }
     return arrayFinal;
 }
-
 console.log(retornaLista(array));
 
-/*
-module.exports.retornaLista = (array) => {
-    var arrayFinal = new Array();    
-    for (const cliente in array) {
-        if (array[cliente].idade >= 18 && array[cliente].idade <= 26) {
-            arrayFinal.push(array[cliente]);
-        }
-    }
-    return arrayFinal;
-}
 */
+
+
 
