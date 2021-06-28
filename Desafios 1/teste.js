@@ -29,26 +29,22 @@ var array = [
 ]
 
 var retornaLista = array => {
-    return array.filter(array.idade >= 18 && array.idade <= 26)
+    function filtrar(array) {
+        return array.idade >= 18 && array.idade <= 26;
+    }
+    return array.filter(filtrar)    
 }
+
 console.log(retornaLista(array))
 
 /*
-module.exports.retornaLista = array => {
-    return array.filter(array.idade >= 18 && array.idade <= 26)
-}
-*/
-
-/*
-var retornaLista = (array) = (array) => {
+module.exports.retornaLista = (array) = (array) => {
     function filtrar(array) {
         return array.idade >= 18 && array.idade <= 26;
     }
     return array.filter(filtrar)
 }
-*/
 
-/*
 var retornaLista = (array) => {
     var arrayFinal = [];    
     for (const cliente in array) {
