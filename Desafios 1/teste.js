@@ -34,6 +34,13 @@ var retornaLista = array => {
 console.log(retornaLista(array))
 
 /*
+module.exports.retornaLista = array => {
+    return array.filter(array.idade >= 18 && array.idade <= 26)
+}
+*/
+
+
+/*
 var retornaLista = (array) = (array) => {
     function filtrar(array) {
         return array.idade >= 18 && array.idade <= 26;
