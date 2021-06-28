@@ -33,7 +33,6 @@ var retornaLista = array => {
 }
 console.log(retornaLista(array))
 
-
 /*
 var retornaLista = (array) = (array) => {
     function filtrar(array) {
