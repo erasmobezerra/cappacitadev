@@ -28,7 +28,7 @@ var array = [
     }
 ]
 
-var retornaLista = array => {
+var retornaLista = (array) => {
     function filtrar(array) {
         return array.idade >= 18 && array.idade <= 26;
     }
@@ -38,7 +38,7 @@ var retornaLista = array => {
 console.log(retornaLista(array))
 
 /*
-module.exports.retornaLista = (array) = (array) => {
+module.exports.retornaLista = (array) => {
     function filtrar(array) {
         return array.idade >= 18 && array.idade <= 26;
     }
