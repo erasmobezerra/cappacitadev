@@ -9,6 +9,7 @@ function multiplicar() {
 }
 multiplicar();
 
+
 console.log("\n// b. Uma função que calcule a subtração de dois valores, crie essas variáveis dentro da sua função")
 
 function subtrair(a,b) {
@@ -18,6 +19,7 @@ function subtrair(a,b) {
 }
 
 subtrair();
+
 
 console.log("\n// c Uma função que imprima todos os itens do array - você pode definir esta variável dentro da função:")
 
@@ -85,6 +87,7 @@ console.log("\n// 2 - Crie as funções parametrizadas a seguir: \n// a. Uma fun
         return a * b
     }
 
+
 console.log("\n// b. Uma função que receba dois valores e retorne o menor deles, se forem iguais retorne que são iguais")
 
     function menor(a,b) {
@@ -100,11 +103,12 @@ console.log("\n// b. Uma função que receba dois valores e retorne o menor dele
 
 console.log("\n// c. Uma função que receba um array e imprima todos os itens na tela")
 
-    // function imprimirArray(listaDadosClientes) {
-    //     for (a of listaDadosClientes) {
-    //         console.log(a)
-    //     }
-    // }
+    function imprimirArray(listaDadosClientes) {
+        for (lista of listaDadosClientes) {
+            console.log(lista)
+        }
+    }
+    
 
 console.log("\n// d. Uma função que receba um o array listaDadosCliente e retorne outro array contendo somente os endereços destes clientes")
 
@@ -127,8 +131,8 @@ var listaDadosClientes = [
 ]
     var listaDeEnderecos = [];
     function imprimirEnderecosArray(listaDadosClientes) {
-        for (a in listaDadosClientes) {
-            listaDeEnderecos[a] = listaDadosClientes[a].endereco
+        for (lista in listaDadosClientes) {
+            listaDeEnderecos[lista] = listaDadosClientes[lista].endereco
         }
         return listaDeEnderecos
     }    
@@ -140,8 +144,8 @@ console.log("\n// e. Uma função que receba um o array listaDadosCliente e reto
 
     var listaDeNomes = [];
     function imprimirNomesArray(listaDadosClientes) {
-        for (a in listaDadosClientes) {
-        listaDeNomes[a] = listaDadosClientes[a].nome
+        for (lista in listaDadosClientes) {
+        listaDeNomes[lista] = listaDadosClientes[lista].nome
         }
         return listaDeNomes
     }    
