@@ -28,8 +28,9 @@ var array = [
     }
 ]
 
-console.log("\nRemovendo o 2 elemento(indice 1) de 'array'")
-console.log()
+console.log(array)
+
+console.log("\nRemovendo o(s) objeto(s) com idade >= 18 e <= 26:\n")
 
 var removerElemento = (array) => {
        

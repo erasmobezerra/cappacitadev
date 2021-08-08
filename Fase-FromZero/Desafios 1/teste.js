@@ -28,6 +28,10 @@ var array = [
     }
 ]
 
+console.log(array)
+
+console.log("\nFiltrando o(s) objeto(s) com idade >= 18 e <= 26:\n")
+
 var retornaLista = (array) => {
     function filtrar(array) {
         return array.idade >= 18 && array.idade <= 26;
