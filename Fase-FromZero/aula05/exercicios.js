@@ -89,7 +89,7 @@ console.log("\n// 9 - Faça um loop que imprima somente os nomes dos clientes no
     ]
 
     for (var i = 0; i < listaClientes.length; i++ ) {
-        console.log(listaClientes[i].nome)
+        console.log(listaClientes[i].nome);
     }
 
 
