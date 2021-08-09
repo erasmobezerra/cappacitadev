@@ -1,15 +1,15 @@
 console.log("1 - Remova o último item da variável e Imprima a nova variável para verificar se o elemento foi removido:")
-var listaDeDoces = ['barra de chocolate', 'bombom', 'bala de goma', 'cocada']
+var listaDeDoces = ['barra de chocolate', 'bombom', 'bala de goma', 'cocada'];
 
-console.log(listaDeDoces)
+console.log(listaDeDoces);
 listaDeDoces.pop();
-console.log(listaDeDoces)
+console.log(listaDeDoces);
 
 
 
 console.log("\n\n 2 - Agora não vamos só remover, você deve guardar o último elemento da variável listaDeDoces em uma nova variável")
 
-var listaDeDoces1 = ['barra de chocolate', 'bombom', 'bala de goma', 'cocada']
+var listaDeDoces1 = ['barra de chocolate', 'bombom', 'bala de goma', 'cocada'];
 ultimoElemento = listaDeDoces1.pop();
 console.log(ultimoElemento)
 
@@ -29,11 +29,11 @@ console.log("\n\n 4 - Utilize a função .map() na variável numerosAleatorios c
 //var metadeArray = numerosAleatorios.map(num => num / 2);
 
 function dividir(x){
-    return x/2
+    return x/2;
 }
-//var metadeArray = numerosAleatorios.map(x => dividir(x))
-var metadeArray = numerosAleatorios.map(dividir)
-console.log(metadeArray)
+//var metadeArray = numerosAleatorios.map(x => dividir(x));
+var metadeArray = numerosAleatorios.map(dividir);
+console.log(metadeArray);
 
 
 
@@ -44,6 +44,6 @@ function ehPar(x) {
 }
 
 //var paresArray = numerosAleatorios.filter(x => ehPar(x))
-var paresArray = numerosAleatorios.filter(ehPar)
-console.log(paresArray)
+var paresArray = numerosAleatorios.filter(ehPar);
+console.log(paresArray);
 
