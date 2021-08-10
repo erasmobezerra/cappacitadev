@@ -39,6 +39,8 @@ console.log(metadeArray);
 
 console.log("5 - Crie uma função que retorna os números pares, a seguir, utilize a função .filter() na  variável numerosAleatorios passando a função que você criou como callback. Veja no slide sobre .filter() como fizemos")
 
+// var paresArray = numerosAleatorios.filter(x => x % 2 == 0)
+
 function ehPar(x) {
     if (x % 2 == 0) return x;
 }
