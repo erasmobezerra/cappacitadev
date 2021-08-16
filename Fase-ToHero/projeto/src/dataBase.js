@@ -25,5 +25,6 @@ function mostrarPokemons() {
     return Object.values(pokemons)
 }
 
+// criando um módulo para deixar os métodos visíveis para outros arquivos
 module.exports = { salvarPokemons, mostrarPokemon, mostrarPokemons }
 
