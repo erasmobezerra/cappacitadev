@@ -9,7 +9,7 @@ Serão 5 módulos no total. Pretendo postar os resultados à medida que eu for p
 ### 1º Módulo 
 
 Nesta 1ª etapa, aprendemos o básico de Javascript, JSON e uma visão geral sobre Inteligência Artificial. <a href="https://github.com/erasmobezerra/cappacitadev/tree/main/Fase-FromZero/Modulo-1"> **Clicando aqui** </a> é possível visualizar os exercícios realizados, incluindo o Desafio proposto neste módulo que foi aprovado com sucesso pela comissão! <br><br>
-
+##
 ### 2º Módulo 
 
 Desenvolvi o chatbot **Miau Miau Cartões 🐱** utilizando o ALTU, uma plataforma de IA conversacional onde é possível construir, evoluir, integrar e monitorar assistentes virtuais que atendam em diversos canais. 
@@ -23,6 +23,18 @@ Instruções para o teste do chabot **Miau Miau Cartões 🐱**:
 ➡️ Também é possível utilizar um CEP válido, use e abuse 😀 
 
 ➡️ Link do chatbot: https://lnkd.in/dADdMQk
-Árvore de Decisão do 2º desafio: 
+
+##
+### 3º Módulo
+
+Na Fase To Hero do **#CAPPACITADEV** irei aprender sobre integração entre sistemas web, criação de API e muitos conteúdos avançados sobre programação.
+
+
+
+​**Módulo 3** - Criando seu Primeiro Projeto (javascript, github, nodejs, ES6)
+
+**Módulo 4** - Criando sua Primeira API (JEST/JOI, MySQL, RestAPI )
+
+**Módulo 5** - Complementando seu Projeto (Frontend, Cloud)
 
 
