@@ -13,25 +13,29 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true}))
 
 
-// REQUISIÇÃO GET
-// Acessando o parâmetro '/', obtemos como resposta o argumento em .send()
-app.get('/pokemons',(requisao,resposta) => 
-    resposta.send(dataBase.mostrarPokemons())
+// REQUISIÇÃO GET 
+// Acessando a rota '/pokemons', obtemos como resposta o retorno do método .send()
+app.get('/pokemons',(req,res) =>  // req (requisição) /  res (resposta)
+    res.send(dataBase.mostrarPokemons())
 );
 
 // REQUISIÇÃO GET
-app.get('/pokemons/:id',(requisao,resposta) => // Acessando o parâmetro '/', obtemos como resposta o argumento em .send()
-    resposta.send(dataBase.mostrarPokemon(requisao.params.id))
+app.get('/pokemons/:id',(req,res) => 
+    res.send(dataBase.mostrarPokemon(req.params.id))
 );
 
 // REQUISIÇÃO POST
-app.post('/pokemons',(requisao,resposta) => {// Acessando o parâmetro '/', obtemos como resposta o argumento em .send()
+app.post('/pokemons',(req,res) => {
     const pokemon = dataBase.salvarPokemons({
-        nome: requisao.body.nome,
-        tipo: requisao.body.tipo
+        nome: req.body.nome,
+        tipo: req.body.tipo
     })
-    resposta.send(pokemon)
+    res.send(pokemon)
 });
+
+// app.delete('/pokemons/:id',(req,res) => 
+//     res.send(dataBase.deletarPokemon(req.params.id))
+// );
 
 // Setando o nº da porta usada para realizar a requisição no Browser
 app.listen(3003);
