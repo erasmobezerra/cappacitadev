@@ -57,6 +57,10 @@ app.post('/batalha', (req, res) => {
     res.send(dataBase.batalhaPokemon(req.body.id1, req.body.id2))
 })
 
+app.post('/recuperado', (req, res) => {
+    res.send(dataBase.curarPokemon(req.body.id))
+})
+
 
 
 // Setando o nº da porta usada para realizar a requisição no Browser

@@ -88,6 +88,22 @@ function batalhaPokemon(id1, id2) {
     
 }
 
+function curarPokemon(id){
+
+    let pocaoHP = 20
+    let pokemonRec = pokemons[id]
+
+    if (pokemonRec.hp < 100) {
+        pokemonRec.hp += pocaoHP
+        return `${pokemonRec.nome}: ${pokemonRec.hp}`
+               
+    } else if (pokemonRec.hp = 100) {        
+        return `O hp de ${pokemonRec.nome} já está no máximo!`
+    }    
+    
+}
+
+
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = { salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon, batalhaPokemon}
+module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon, batalhaPokemon, curarPokemon}
 
