@@ -7,7 +7,7 @@ const sequence = {
 
 // recebe vazio pois nã há nenhum cadastro no momento
 
-const pokemons = {}
+const pokemons = []
 
 // mostra todos os Pokemons cadastrados
 function mostrarPokemons() {
@@ -27,12 +27,31 @@ function salvarPokemons(pokemon) {
     return pokemon
 }
 
+// atualiza um pokemon já existente na base de dados
 function atualizarPokemon(id, pokemon) {
     pokemons[id] = pokemon
     return pokemon
 }
 
+// deleta um pokemon já existente na base de dados
+function deletarPokemon(id) {
+
+    sequence._id -= 1  // Quando chamado o método deletarPokemon, a contagem de id será subtraída em menos um. 
+
+    const pokemonDeletado = pokemons[id]  
+
+    pokemons.splice(id, 1)  // Remove o elemento do array correspondente ao id
+
+    pokemons.forEach(pokemon => {  // Executa uma ação específica em cada elemento do array
+        if(pokemon.id > id) {
+            pokemon.id -= 1
+        }
+    })
+
+    return pokemonDeletado  
+}
+
 
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = { salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon}
+module.exports = { salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon}
 

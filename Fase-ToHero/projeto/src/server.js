@@ -43,6 +43,12 @@ app.put('/pokemons/:id',(req,res) => {
     res.send(pokemon)
 });
 
+app.delete('/pokemons/:id',(req,res) => 
+    res.send(dataBase.deletarPokemon(req.params.id))
+);
+
+
+
 
 
 // Setando o nº da porta usada para realizar a requisição no Browser
