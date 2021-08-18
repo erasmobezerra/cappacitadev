@@ -1,4 +1,4 @@
-//caso não setado, o id será incrementado automaticamente 
+//O id é incrementado automaticamente 
 const sequence = {
     _id: 1,
     get id() { return this._id++}
@@ -7,7 +7,7 @@ const sequence = {
 
 // recebe vazio pois nã há nenhum cadastro no momento
 
-const pokemons = []
+const pokemons = {}
 
 // mostra todos os Pokemons cadastrados
 function mostrarPokemons() {
@@ -22,18 +22,17 @@ function mostrarPokemon(id) {
 // salva um novo pokemon na base de dados
 function salvarPokemons(pokemon) {
     if ( !pokemon.id ) 
-        pokemon.id = sequence.id
-        
+        pokemon.id = sequence.id        
     pokemons[pokemon.id] = pokemon
     return pokemon
 }
 
-// // salva um novo pokemon na base de dados
-// function deletarPokemon(id) {    
-//     pokemons.splice(pokemons[id])   
-//     return pokemons
-// }
+function atualizarPokemon(id, pokemon) {
+    pokemons[id] = pokemon
+    return pokemon
+}
+
 
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = { salvarPokemons, mostrarPokemon, mostrarPokemons }
+module.exports = { salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon}
 

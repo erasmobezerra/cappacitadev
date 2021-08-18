@@ -33,9 +33,17 @@ app.post('/pokemons',(req,res) => {
     res.send(pokemon)
 });
 
-// app.delete('/pokemons/:id',(req,res) => 
-//     res.send(dataBase.deletarPokemon(req.params.id))
-// );
+
+app.put('/pokemons/:id',(req,res) => {
+    const pokemon = dataBase.atualizarPokemon(req.params.id,{
+        nome: req.body.nome,
+        tipo: req.body.tipo,
+        id: req.params.id
+    })
+    res.send(pokemon)
+});
+
+
 
 // Setando o nº da porta usada para realizar a requisição no Browser
 app.listen(3003);
