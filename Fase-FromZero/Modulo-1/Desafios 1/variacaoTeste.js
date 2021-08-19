@@ -30,17 +30,25 @@ var array = [
 
 console.log(array)
 
-console.log("\nRemovendo o(s) objeto(s) com idade >= 18 e <= 26:\n")
-
-var removerElemento = (array) => {
-       
-    for (const cliente in array) {
-        if (array[cliente].idade >= 18 && array[cliente].idade <= 26) {
-            array.splice(array.indexOf(array[cliente]), 1);
-        }
-    }
-    return array;
+function deletarArray() {
+    return array.splice(0, array.length)
 }
+deletarArray()
+console.log("Limpada o array: ")
+console.log(array)
 
-console.log(removerElemento(array));
+
+// console.log("\nRemovendo o(s) objeto(s) com idade >= 18 e <= 26:\n")
+
+// var removerElemento = (array) => {
+       
+//     for (const cliente in array) {
+//         if (array[cliente].idade >= 18 && array[cliente].idade <= 26) {
+//             array.splice(array.indexOf(array[cliente]), 1);
+//         }
+//     }
+//     return array;
+// }
+
+// console.log(removerElemento(array));
 
