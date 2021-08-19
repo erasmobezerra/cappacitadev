@@ -33,6 +33,7 @@ function atualizarPokemon(id, pokemon) {
     return pokemon
 }
 
+
 // deleta um pokemon já existente na base de dados
 function deletarPokemon(id) {
 
@@ -49,6 +50,15 @@ function deletarPokemon(id) {
     })
 
     return pokemonDeletado  
+}
+
+
+function deletarPokemons() {
+    if (pokemons.length === 0)
+        return `Não há nenhum pokemons aqui para deletar.`
+    else
+        pokemons.splice(0, pokemons.length)
+        return `Todos os pokemons deletados com sucesso!`    
 }
 
 
@@ -105,5 +115,5 @@ function curarPokemon(id){
 
 
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon, batalhaPokemon, curarPokemon}
+module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon, deletarPokemons, batalhaPokemon, curarPokemon}
 
