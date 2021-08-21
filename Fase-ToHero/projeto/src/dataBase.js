@@ -108,12 +108,32 @@ function curarPokemon(id){
         return `${pokemonRec.nome}: ${pokemonRec.hp}`
                
     } else if (pokemonRec.hp = 100) {        
-        return `O hp de ${pokemonRec.nome} já está no máximo!`
+        return `hp de ${pokemonRec.nome} já está no máximo!`
     }    
     
 }
 
 
+function mostrarNomesPokemons() {
+    const nomesPokemons = []
+    if (pokemons.length === 0)
+        return `Nenhum Pokemon ainda foi cadastrado`
+    else        
+        for (const i in pokemons) {
+            nomesPokemons.push(pokemons[i].nome)  
+        }
+        return `Nomes dos pokemons cadastrados: ${nomesPokemons}`    
+}
+
+
+function mostrarPorTipoPokemons(tipo) {    
+    if (pokemons.length === 0)
+        return `Nenhum Pokemon ainda foi cadastrado`
+    else        
+    return pokemons.filter(pokemons => pokemons.tipo == tipo) 
+}
+
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon, deletarPokemons, batalhaPokemon, curarPokemon}
+module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, atualizarPokemon, deletarPokemon, deletarPokemons, 
+                    batalhaPokemon, curarPokemon, mostrarNomesPokemons, mostrarPorTipoPokemons}
 
