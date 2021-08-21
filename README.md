@@ -22,16 +22,16 @@ Instruções para o teste do chabot **Miau Miau Cartões 🐱**:
 
 ➡️ Também é possível utilizar um CEP válido, use e abuse 😀 
 
-➡️ Link do chatbot: https://lnkd.in/dADdMQk
+➡️ Link do chatbot: https://lnkd.in/dADdMQk <br><br>
 
 ##
-### 3º Módulo
+### 3º Módulo (Criando o Primeiro Projeto (javascript, github, nodejs, ES6)
 
 Na Fase To Hero do **#CAPPACITADEV** irei aprender sobre integração entre sistemas web, criação de API e muitos conteúdos avançados sobre programação.
 
+O desafio proposto aqui é a construção de uma API "Pokemon". A mesma encontra-se <a href="https://github.com/erasmobezerra/cappacitadev/tree/main/Fase-ToHero/projeto" > aqui! </a>.
 
-
-​**Módulo 3** - Criando seu Primeiro Projeto (javascript, github, nodejs, ES6)
+(...)
 
 **Módulo 4** - Criando sua Primeira API (JEST/JOI, MySQL, RestAPI )
 
