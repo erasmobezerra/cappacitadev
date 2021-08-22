@@ -14,10 +14,12 @@ function mostrarPokemons() {
     return Object.values(pokemons)
 }
 
+
 // mostra o Pokemon correspondente ao parâmtro (id) utilizado
 function mostrarPokemon(id) {
     return pokemons[id] || {}
 }
+
 
 // salva um novo pokemon na base de dados
 function salvarPokemons(pokemon) {
@@ -26,6 +28,7 @@ function salvarPokemons(pokemon) {
     pokemons[pokemon.id] = pokemon
     return pokemon
 }
+
 
 // atualiza um pokemon já existente na base de dados
 function atualizarPokemon(id, pokemon) {
@@ -48,7 +51,6 @@ function deletarPokemon(id) {
             pokemon.id -= 1
         }
     })
-
     return pokemonDeletado  
 }
 
@@ -94,35 +96,33 @@ function batalhaPokemon(id1, id2) {
     if(pokemon1.hp < 0) pokemon1.hp = 0
     if(pokemon2.hp < 0) pokemon2.hp = 0
 
-    return `${pokemon1.nome}: ${pokemon1.hp} / ${pokemon2.nome}: ${pokemon2.hp}`
-    
+    return `${pokemon1.nome}: ${pokemon1.hp} / ${pokemon2.nome}: ${pokemon2.hp}`    
 }
 
-function curarPokemon(id){
 
+function curarPokemon(id){
     let pocaoHP = 20
     let pokemonRec = pokemons[id]
 
     if (pokemonRec.hp < 100) {
         pokemonRec.hp += pocaoHP
-        return `${pokemonRec.nome}: ${pokemonRec.hp}`
-               
-    } else if (pokemonRec.hp = 100) {        
+        return `${pokemonRec.nome}: ${pokemonRec.hp}`               
+    } else  {        
         return `hp de ${pokemonRec.nome} já está no máximo!`
-    }    
-    
+    }      
 }
 
 
 function mostrarNomesPokemons() {
     const nomesPokemons = []
-    if (pokemons.length === 0)
+    if (pokemons.length === 0) {
         return `Nenhum Pokemon ainda foi cadastrado`
-    else        
+    } else {        
         for (const i in pokemons) {
             nomesPokemons.push(pokemons[i].nome)  
         }
         return `Nomes dos pokemons cadastrados: ${nomesPokemons}`    
+    }
 }
 
 
