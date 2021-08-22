@@ -51,16 +51,6 @@ function deletarPokemon(id) {
 }
 
 
-function deletarPokemons() {    
-    if (pokemons.length === 0)
-        return `Não há nenhum pokemons aqui para deletar.`
-    else
-        sequence._id -= pokemons.length - 1    
-        pokemons.splice(0, pokemons.length)
-        return `Todos os pokemons deletados com sucesso!`            
-}
-
-
 function batalhaPokemon(id1, id2) {
 
     const superEfetivo = 40
@@ -112,6 +102,16 @@ function curarPokemon(id){
     } else if (pokemonRec.hp >=100)  {        
         return `O HP de ${pokemonRec.nome} já está no máximo, obrigado!`
     }      
+}
+
+
+function deletarPokemons() {    
+    if (pokemons.length === 0)
+        return `Não há nenhum pokemons aqui para deletar.`
+    else
+        sequence._id -= pokemons.length - 1    
+        pokemons.splice(0, pokemons.length)
+        return `Todos os pokemons deletados com sucesso!`            
 }
 
 

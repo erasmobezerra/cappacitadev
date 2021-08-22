@@ -39,36 +39,3 @@ const pokemons = [
 const pokemonsTipoFogo = pokemons.filter(pokemons => pokemons.tipo == "Fogo") 
 console.log(pokemonsTipoFogo)
 
-// function curarPokemon(id){
-//     const pocao = 20
-
-//     const pokemon1 = pokemons[id]
-
-//     if (pokemon1.hp < 100){
-//         pokemon1.hp = pokemon1.hp + pocao
-//     }    
-//     if (pokemon1.hp == 90){
-//         pokemon1.hp = pokemon1.hp + 10
-//     }
-//     else if (pokemon1.hp >=  100) {
-//         pokemon1.hp = 100
-//     }
-//     return `${pokemon1.hp}`
-// }
-
-// console.log(curarPokemon(4))
-
-// function curarPokemon(id){
-    
-//     const pokemonC = pokemons[id]
-//     const pocaoCura = 20
-
-//     if (pokemonC.hp < 100) {
-//         pokemonC.hp += pocaoCura
-//         return `${pokemonC.nome}: ${pokemonC.hp}`
-
-//     } else if (pokemonC.hp >= 100) {
-//         return `Seu pokemon está com a vida máxima`  
-//     }
-
-// }
