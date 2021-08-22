@@ -31,7 +31,7 @@ app.post('/pokemons',(req,res) => {
         tipo: req.body.tipo,
         fraqueza: req.body.fraqueza,
         resistencia: req.body.resistencia,
-        hp: 100
+        hp: 90
     })
     res.send(pokemon)
 });
@@ -61,7 +61,7 @@ app.post('/batalha', (req, res) => {
     res.send(dataBase.batalhaPokemon(req.body.id1, req.body.id2))
 })
 
-app.post('/recuperado', (req, res) => {
+app.post('/curar', (req, res) => {
     res.send(dataBase.curarPokemon(req.body.id))
 })
 

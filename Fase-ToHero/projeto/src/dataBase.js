@@ -39,13 +39,9 @@ function atualizarPokemon(id, pokemon) {
 
 // deleta um pokemon já existente na base de dados
 function deletarPokemon(id) {
-
     sequence._id -= 1  // Quando chamado o método deletarPokemon, a contagem de id será subtraída em menos um. 
-
     const pokemonDeletado = pokemons[id]  
-
     pokemons.splice(id, 1)  // Remove o elemento do array correspondente ao id
-
     pokemons.forEach(pokemon => {  // Executa uma ação específica em cada elemento do array
         if(pokemon.id > id) {
             pokemon.id -= 1
@@ -55,12 +51,13 @@ function deletarPokemon(id) {
 }
 
 
-function deletarPokemons() {
+function deletarPokemons() {    
     if (pokemons.length === 0)
         return `Não há nenhum pokemons aqui para deletar.`
     else
+        sequence._id -= pokemons.length - 1    
         pokemons.splice(0, pokemons.length)
-        return `Todos os pokemons deletados com sucesso!`    
+        return `Todos os pokemons deletados com sucesso!`            
 }
 
 
@@ -104,11 +101,16 @@ function curarPokemon(id){
     let pocaoHP = 20
     let pokemonRec = pokemons[id]
 
-    if (pokemonRec.hp < 100) {
+    if (pokemons.length === 0) {
+        return `Opss... Por favor, verifique se o ID pokemon é válido ou se o mesmo já foi cadastrado anteriormente, obrigado!`
+    } else if (pokemonRec.hp < 90) {
         pokemonRec.hp += pocaoHP
+        return `${pokemonRec.nome}: ${pokemonRec.hp}`  
+    } else if (pokemonRec.hp == 90) {
+        pokemonRec.hp = 100
         return `${pokemonRec.nome}: ${pokemonRec.hp}`               
-    } else  {        
-        return `hp de ${pokemonRec.nome} já está no máximo!`
+    } else if (pokemonRec.hp >=100)  {        
+        return `O HP de ${pokemonRec.nome} já está no máximo, obrigado!`
     }      
 }
 
@@ -126,11 +128,17 @@ function mostrarNomesPokemons() {
 }
 
 
-function mostrarPorTipoPokemons(tipo) {    
+function mostrarPorTipoPokemons(tipo) {        
     if (pokemons.length === 0)
         return `Nenhum Pokemon ainda foi cadastrado`
-    else        
-    return pokemons.filter(pokemons => pokemons.tipo == tipo) 
+    else {       
+        const tipoPokemon = pokemons.filter(pokemons => pokemons.tipo == tipo)        
+        if (tipoPokemon.length === 0) {
+            return `Opss... Não encontramos nenhum pokemon do tipo ${tipo}.`
+        } else {
+            return tipoPokemon
+        }
+    }
 }
 
 // criando um módulo para deixar os métodos visíveis para outros arquivos
