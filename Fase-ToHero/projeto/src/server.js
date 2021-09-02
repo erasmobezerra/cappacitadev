@@ -12,6 +12,16 @@ const bodyParser = require('body-parser');
 // Usando o body-parser 
 app.use(bodyParser.urlencoded({ extended: true}))
 
+app.get('/pokemons',async(req,res) =>  // req (requisição) /  res (resposta)
+    res.send(await dataBase.mostrarPokemons())
+);
+
+
+app.get('/pokemons/:id', async(req,res) => 
+    res.send(await dataBase.mostrarPokemon(req.params.id))
+);
+
+
 app.post('/pokemons', async (req,res) => {
     const pokemon =  await dataBase.salvarPokemons({
         nome: req.body.nome,
@@ -20,14 +30,8 @@ app.post('/pokemons', async (req,res) => {
     res.send(pokemon)
 });
 
-// app.get('/pokemons',(req,res) =>  // req (requisição) /  res (resposta)
-//     res.send(dataBase.mostrarPokemons())
-// );
 
-// // REQUISIÇÃO GET
-// app.get('/pokemons/:id',(req,res) => 
-//     res.send(dataBase.mostrarPokemon(req.params.id))
-// );
+
 
 // REQUISIÇÃO POST
 

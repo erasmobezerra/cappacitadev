@@ -3,4 +3,4 @@ const databaseConfig = require('./knexfile')
 
 const databaseConnection = knex(databaseConfig)
 
-module.exports = { databaseConnection}
+module.exports = {databaseConnection}

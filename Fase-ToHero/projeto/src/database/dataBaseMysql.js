@@ -5,10 +5,8 @@ const pokemons = {}
 
 // salva um novo pokemon na base de dados
 async function salvarPokemons(pokemon) {
-
     const queryInsertPokemon = `INSERT INTO pokemons(nome_pokemon, tipo) VALUES ('${pokemon.nome}', '${pokemon.tipo}')`
-
-    //Executa  a query inserindo-a no banco de dados 
+    
     const result = await databaseConnection.raw(queryInsertPokemon)
     
     console.log(result)
@@ -27,6 +25,23 @@ async function salvarPokemons(pokemon) {
     }
 }
 
+async function mostrarPokemon(id) {
+
+    const querySelectPokemon = `SELECT * FROM pokemons WHERE id = ${id}`
+
+    const result = await databaseConnection.raw(querySelectPokemon)
+
+    return result[0]
+}
+
+async function mostrarPokemons(){
+    const querySelectPokemons = `SELECT * FROM pokemons`
+
+    const result = await databaseConnection.raw(querySelectPokemons)
+
+    return result[0]
+}
+
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = {salvarPokemons}
+module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons}
 
