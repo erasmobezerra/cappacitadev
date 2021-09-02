@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 // Importando dataBase,js
-const dataBase = require('./dataBase.js');
+const dataBase = require('./database/dataBase.js');
 // Importando pacote Body-parser 
 const bodyParser = require('body-parser');
 
@@ -31,7 +31,7 @@ app.post('/pokemons',(req,res) => {
         tipo: req.body.tipo,
         fraqueza: req.body.fraqueza,
         resistencia: req.body.resistencia,
-        hp: 90
+        hp: 100
     })
     res.send(pokemon)
 });

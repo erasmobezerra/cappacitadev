@@ -39,10 +39,10 @@ function atualizarPokemon(id, pokemon) {
 
 // deleta um pokemon já existente na base de dados
 function deletarPokemon(id) {
-    sequence._id -= 1  // Quando chamado o método deletarPokemon, a contagem de id será subtraída em menos um. 
+    sequence._id -= 1 
     const pokemonDeletado = pokemons[id]  
-    pokemons.splice(id, 1)  // Remove o elemento do array correspondente ao id
-    pokemons.forEach(pokemon => {  // Executa uma ação específica em cada elemento do array
+    pokemons.splice(id, 1)  
+    pokemons.forEach(pokemon => {  
         if(pokemon.id > id) {
             pokemon.id -= 1
         }
