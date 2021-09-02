@@ -24,8 +24,9 @@ app.get('/pokemons/:id', async(req,res) =>
 
 app.post('/pokemons', async (req,res) => {
     const pokemon =  await dataBase.salvarPokemons({
-        nome: req.body.nome,
-        tipo: req.body.tipo      
+        nome_pokemon: req.body.nome_pokemon,
+        tipo: req.body.tipo,
+        local_origem: req.body.local_origem      
     })
     res.send(pokemon)
 });
