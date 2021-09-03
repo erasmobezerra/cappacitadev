@@ -14,8 +14,7 @@ async function salvarPokemons(pokemon) {
         local_origem: pokemon.local_origem
     }
    
-    const result = await databaseConnection('pokemons').insert(insertPokemon)   
-    
+    const result = await databaseConnection('pokemons').insert(insertPokemon)       
     console.log(result)
 
     if(result) {
@@ -37,7 +36,7 @@ async function salvarPokemons(pokemon) {
 async function mostrarPokemon(id) {
     // const querySelectPokemon = `SELECT * FROM pokemons WHERE id = ${id}`
     // const result = await databaseConnection.raw(querySelectPokemon)
-    const result = await databaseConnection.select().from('pokemons').where('id','=',id)
+    const result = await databaseConnection.select().from('pokemons').where({id})
     return result[0]
 }
 
@@ -48,6 +47,28 @@ async function mostrarPokemons(){
     return result
 }
 
+async function alterarPokemon(id, pokemon) {   
+    const updatePokemon = {
+        nome_pokemon: pokemon.nome_pokemon,
+        tipo: pokemon.tipo,
+        local_origem: pokemon.local_origem
+    }
+   
+    const result = await databaseConnection('pokemons').where({id}).update(updatePokemon)     
+    console.log(result)
+
+    if(result) {
+        return {
+            ...pokemon,
+            id: result[0]
+        }
+    } else {
+        console.error("Deu erro!")
+        return {
+            error: "Deu erro na inserção!"
+        }
+    }
+}
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons}
+module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, alterarPokemon}
 

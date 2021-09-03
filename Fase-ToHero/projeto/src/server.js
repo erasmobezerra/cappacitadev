@@ -31,6 +31,15 @@ app.post('/pokemons', async (req,res) => {
     res.send(pokemon)
 });
 
+app.put('/pokemons/:id', async (req,res) => {
+    const pokemon =  await dataBase.alterarPokemon(req.params.id, {
+        nome_pokemon: req.body.nome_pokemon,
+        tipo: req.body.tipo,
+        local_origem: req.body.local_origem      
+    })
+    res.send(pokemon)
+});
+
 
 
 
