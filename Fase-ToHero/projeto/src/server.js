@@ -26,7 +26,10 @@ app.post('/pokemons', async (req,res) => {
     const pokemon =  await dataBase.salvarPokemons({
         nome_pokemon: req.body.nome_pokemon,
         tipo: req.body.tipo,
-        local_origem: req.body.local_origem      
+        local_origem: req.body.local_origem,
+        fraqueza: req.body.fraqueza,
+        resistencia: req.body.resistencia,
+        hp: 100      
     })
     res.send(pokemon)
 });
@@ -35,13 +38,19 @@ app.put('/pokemons/:id', async (req,res) => {
     const pokemon =  await dataBase.alterarPokemon(req.params.id, {
         nome_pokemon: req.body.nome_pokemon,
         tipo: req.body.tipo,
-        local_origem: req.body.local_origem      
+        local_origem: req.body.local_origem,
+        fraqueza: req.body.fraqueza,
+        resistencia: req.body.resistencia             
     })
     res.send(pokemon)
 });
 
 app.delete('/pokemons/:id', async(req,res) => 
     res.send(await dataBase.deletarPokemon(req.params.id))
+);
+
+app.get('/batalha', async(req,res) => 
+    res.send(await dataBase.batalhaPokemon(req.body.id1,req.body.id2))
 );
 
 
