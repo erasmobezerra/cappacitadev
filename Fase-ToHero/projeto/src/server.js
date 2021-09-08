@@ -40,10 +40,10 @@ app.put('/pokemons/:id', async (req,res) => {
     res.send(pokemon)
 });
 
+app.delete('/pokemons/:id', async(req,res) => 
+    res.send(await dataBase.deletarPokemon(req.params.id))
+);
 
-
-
-// REQUISIÇÃO POST
 
 // Setando o nº da porta usada para realizar a requisição no Browser
 app.listen(3003);
