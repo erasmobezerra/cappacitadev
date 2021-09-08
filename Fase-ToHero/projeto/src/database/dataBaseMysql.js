@@ -69,6 +69,12 @@ async function alterarPokemon(id, pokemon) {
         }
     }
 }
+
+async function deletarPokemon(id) {    
+    const result = await databaseConnection('pokemons').where({id}).del()
+    return result[0]
+}
+
 // criando um módulo para deixar os métodos visíveis para outros arquivos
-module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, alterarPokemon}
+module.exports = {salvarPokemons, mostrarPokemon, mostrarPokemons, alterarPokemon, deletarPokemon}
 
