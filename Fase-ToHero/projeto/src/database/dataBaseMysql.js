@@ -94,72 +94,63 @@ async function batalhaPokemon(id1, id2) {
     if(pokemon1[0].hp != 0 && pokemon2[0].hp != 0) {
         if(pokemon1[0].tipo == pokemon2[0].fraqueza) {
             pokemon2[0].hp -= superEfetivo
-            var id = id2    
-            const updatePokemon = {hp: pokemon2[0].hp}  
-            await databaseConnection('pokemons').where({id}).update(updatePokemon)    
+            var id = id2             
+            await databaseConnection('pokemons').where({id}).update({hp: pokemon2[0].hp})    
         } else if (pokemon1[0].tipo == pokemon2[0].resistencia) {
             pokemon2[0].hp -= naoEfetivo
             var id = id2    
-            const updatePokemon = {hp: pokemon2[0].hp}  
-            await databaseConnection('pokemons').where({id}).update(updatePokemon)
+            await databaseConnection('pokemons').where({id}).update({hp: pokemon2[0].hp})
         } else {
             pokemon2[0].hp -= efetivo
             var id = id2    
-            const updatePokemon = {hp: pokemon2[0].hp}  
-            await databaseConnection('pokemons').where({id}).update(updatePokemon)
+            await databaseConnection('pokemons').where({id}).update({hp: pokemon2[0].hp})
         }
     }
 
     if(pokemon1[0].hp != 0 && pokemon2[0].hp != 0) {
         if(pokemon2[0].tipo == pokemon1[0].fraqueza) {
             pokemon1[0].hp -= superEfetivo
-            var id = id1    
-            const updatePokemon = {hp: pokemon1[0].hp}  
-            await databaseConnection('pokemons').where({id}).update(updatePokemon)
+            var id = id1           
+            await databaseConnection('pokemons').where({id}).update({hp: pokemon1[0].hp})
         } else if (pokemon2[0].tipo == pokemon1[0].resistencia) {
             pokemon1[0].hp -= naoEfetivo
-            var id = id1    
-            const updatePokemon = {hp: pokemon1[0].hp}  
-            await databaseConnection('pokemons').where({id}).update(updatePokemon)
+            var id = id1           
+            await databaseConnection('pokemons').where({id}).update({hp: pokemon1[0].hp})
         } else {
             pokemon1[0].hp -= efetivo
-            var id = id1    
-            const updatePokemon = {hp: pokemon1[0].hp}  
-            await databaseConnection('pokemons').where({id}).update(updatePokemon)
+            var id = id1           
+            await databaseConnection('pokemons').where({id}).update({hp: pokemon1[0].hp})
         }
     }
 
     if(pokemon1[0].hp < 0) {
         pokemon1[0].hp = 0
-        var id = id1    
-        const updatePokemon = {hp: pokemon1[0].hp}  
-        await databaseConnection('pokemons').where({id}).update(updatePokemon)
+        var id = id1           
+        await databaseConnection('pokemons').where({id}).update({hp: pokemon1[0].hp})
     } 
 
     if(pokemon2[0].hp < 0) {
         pokemon2[0].hp = 0
         var id = id2    
-        const updatePokemon = {hp: pokemon2[0].hp}  
-        await databaseConnection('pokemons').where({id}).update(updatePokemon)        
+        await databaseConnection('pokemons').where({id}).update({hp: pokemon2[0].hp})      
     }             
 
     return `${pokemon1[0].nome_pokemon}: ${pokemon1[0].hp} / ${pokemon2[0].nome_pokemon}: ${pokemon2[0].hp}`    
 }
 
+
 async function curarPokemon(id){
     const pocaoHP = 20
     const pokemonRec = await databaseConnection.select().from('pokemons').where({id})   
 
-    pokemonRec[0].hp += pocaoHP
-    const updatePokemon = {hp: pokemonRec[0].hp}
-    await databaseConnection('pokemons').where({id}).update(updatePokemon) 
+    pokemonRec[0].hp += pocaoHP    
+    await databaseConnection('pokemons').where({id}).update({hp: pokemonRec[0].hp}) 
 
     if (pokemonRec[0].hp >= 100) {
-        pokemonRec[0].hp = 100
-        const updatePokemon = {hp: 100}
-        await databaseConnection('pokemons').where({id}).update(updatePokemon) 
+        pokemonRec[0].hp = 100        
+        await databaseConnection('pokemons').where({id}).update({hp: 100}) 
     }       
-
+    
     return `${pokemonRec[0].nome_pokemon}: ${pokemonRec[0].hp}`     
 }
 
