@@ -53,6 +53,10 @@ app.get('/batalha', async(req,res) =>
     res.send(await dataBase.batalhaPokemon(req.body.id1,req.body.id2))
 );
 
+app.get('/cura/:id', async(req,res) => 
+    res.send(await dataBase.curarPokemon(req.params.id))
+);
+
 
 // Setando o nº da porta usada para realizar a requisição no Browser
 app.listen(3003);
