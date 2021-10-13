@@ -2,9 +2,8 @@
 
 ### Olá, boas vindas por aqui! 
 
-<br>Estou participando do curso de programação de IAs Conversacionais da comunidade <a href="https://www.cappacita.com.br/"> **Cappacita** </a>. A #CappacitaDev tem como objetivo explicar de ponta a ponta todo o processo de desenvolvimento de um chatbot inteligente e dar oportunidade para qualquer pessoa interessada em se especializar em programação de chatbots e IAs conversacionais.
+<br>Participei de um curso de programação de IAs Conversacionais da comunidade <a href="https://www.cappacita.com.br/"> **Cappacita** </a>. A #CappacitaDev tem como objetivo explicar de ponta a ponta todo o processo de desenvolvimento de um chatbot inteligente e dar oportunidade para qualquer pessoa interessada em se especializar em programação de chatbots e IAs conversacionais.
 
-Serão 5 módulos no total. Pretendo postar os resultados à medida que eu for progredindo. <br><br>
 
 ### 1º Módulo 
 
@@ -29,12 +28,12 @@ Instruções para o teste do chabot **Miau Miau Cartões 🐱**:
 
 Na Fase To Hero do **#CAPPACITADEV** irei aprender sobre integração entre sistemas web, criação de API e muitos conteúdos avançados sobre programação.
 
-O desafio proposto aqui é a construção de uma API "Pokemon". A mesma encontra-se <a href="https://github.com/erasmobezerra/cappacitadev/tree/main/Fase-ToHero/projeto" > aqui! </a>.
+O desafio proposto aqui é a construção de uma API "Pokemon". A mesma encontra-se <a href="https://github.com/erasmobezerra/cappacitadev/tree/main/Fase-ToHero/projeto" > aqui! </a>. <br><br>
 
-(...)
+##
+### Módulo 4 - Criando sua Primeira API (JEST/JOI, MySQL, RestAPI) 
+### Módulo 5 - Complementando seu Projeto (Frontend, Cloud)
 
-**Módulo 4** - Criando sua Primeira API (JEST/JOI, MySQL, RestAPI )
-
-**Módulo 5** - Complementando seu Projeto (Frontend, Cloud)
+O resultado do aprendizado nestes dois módulos foi o desenvolvimento de uma API RestFull de Filmes. <a href="" > Clique Aqui </a> para ter acesso ao resultado!
 
 
