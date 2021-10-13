@@ -1,0 +1,22 @@
+body {
+    display:flex; 
+    justify-content: center;
+    padding-top: 10rem;   
+    background-image: url(assets/back_form.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-color: #000;
+    background-repeat: no-repeat;
+    color: white
+   }
+
+   body.bg_filmes {
+    background-image: url(assets/background_login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }   
+
+
+       
+
+    

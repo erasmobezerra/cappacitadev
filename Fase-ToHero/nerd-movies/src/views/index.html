@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.6.55/css/materialdesignicons.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+  
+
+  </head>
+                  
+  <body>   
+    <!-- Menu -->
+    <div class="container-fluid">
+      <header class="row">
+        <div class="col-2">
+          <h1>Nerd Movies!</h1>
+        </div>
+       
+        <div id='teste' class="col-8">
+          <ul class="menu_list">
+            <li>
+              <a href="index.html">Início</a>
+            </li>
+            <li>
+              <a href="index.html">Séries</a>
+            </li>
+            <li>
+              <a href="index.html">Filmes</a>
+            </li>
+            <li>
+              <a href="index.html">Mais Recentes</a>
+            </li>
+            <li>
+              <a href="index.html">Minha lista</a>
+            </li>
+          </ul>
+        </div>       
+      </header>
+    </div>
+
+     <!-- Destaque  -->
+    <div id="hero" class="container-fluid">
+      <div class="container">
+        <div class="row" id="hero_infos">
+          <div class="col-6">
+            <img class="logo" src="assets/name-sex-education.webp" />
+            <h1 class="text-white">
+              <img src="assets/badge-top-10.png" />Top 1 de hoje no Brasil.
+            </h1>
+            <p class="text-white">
+              O inseguro Otis manja quando o negócio é aconselhamento sexual, graças a sua mãe 
+              sexóloga. E aí a rebelde Maeve propõe criar uma clínica de terapia sexual na escola.
+            </p>
+            <br />
+            <button class="btn btn-lg btn-custom-white">
+              <span class="mdi mdi-play"></span> Assistir
+            </button>
+            <button class="btn btn-lg btn-custom-translucent">
+              <span class="mdi mdi-information-outline"></span> Mais Informações
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Lista de Filmes -->
+
+    <div id="main-content">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-20">
+              <h5 style="color:grey"><strong>Selecione um filme e veja detalhes!</strong></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="filme_lista">
+            
+            <li class="filme" data-toggle="modal" data-target="#modal-filme1">
+              <img class="img-fluid" src="https://image.tmdb.org/t/p/w300/yVUAfbrP5HDJugXraB7KQS0yz6Z.jpg" id='poster_image' />
+              <div class="filme_info">
+                <div class="col-12">
+                  <a href="index.html" class="btn-custom-round btn btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="index.html" lass="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                </div>                
+              </div>
+            </li>         
+            <li class="filme" data-toggle="modal" data-target="#modal-filme2">
+              <img class="img-fluid" src="https://image.tmdb.org/t/p/w300/6T0r3jBs0xbmzVnM9u7e3vUXMYk.jpg" />
+              <div class="filme_info">               
+                  <div class="col-12">
+                    <a href="index.html" class="btn-custom-round btn btn-light rounded-circle">
+                      <span class="mdi mdi-play"></span>
+                    </a>
+                    <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                      <span class="mdi mdi-thumb-up text-white"></span>
+                    </a>
+                    <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                      <span class="mdi mdi-thumb-down text-white"></span>
+                    </a>
+                    <a href="index.html" lass="btn-custom-round border-white btn rounded-circle opacity-50" >
+                      <span class="mdi mdi-plus text-white"></span>
+                    </a>
+                  </div>                
+                </div>
+              </li>
+
+            <li class="filme" data-toggle="modal" data-target="#modal-filme3">
+              <img class="img-fluid" src="https://image.tmdb.org/t/p/w300/wTS3dS2DJiMFFgqKDz5fxMTri.jpg" />
+              <div class="filme_info">
+                <div class="col-12">
+                  <a href="index.html" class="btn-custom-round btn btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="index.html" lass="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                </div>                
+              </div>
+            </li>
+
+            <li class="filme" data-toggle="modal" data-target="#modal-filme4">
+              <img class="img-fluid" src="https://image.tmdb.org/t/p/w300/e7n55C4027aRPHNmjE8XIk8nKvZ.jpg" />
+              <div class="filme_info">
+                <div class="col-12">
+                  <a href="index.html" class="btn-custom-round btn btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="index.html" lass="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                </div>                
+              </div>
+            </li>
+
+            <li class="filme" data-toggle="modal" data-target="#modal-filme5">
+              <img class="img-fluid" src="https://image.tmdb.org/t/p/w300/wfXinhEH2oJ1odvAiwPS1Yjidyr.jpg" />
+              <div class="filme_info">
+                <div class="col-12">
+                  <a href="index.html" class="btn-custom-round btn btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="index.html" lass="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                </div>                
+              </div>
+            </li>
+
+            <li class="filme" data-toggle="modal" data-target="#modal-filme6">
+              <img class="img-fluid" src="https://image.tmdb.org/t/p/w300/fnAzaxRSiveFafudJtByxA7I2xT.jpg" />
+              <div class="filme_info">
+                <div class="col-12">
+                  <a href="index.html" class="btn-custom-round btn btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="index.html" class="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="index.html" lass="btn-custom-round border-white btn rounded-circle opacity-50" >
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                </div>                
+              </div>
+            </li>            
+          </ul>
+
+        </div>
+      </section>         
+     
+    </div>
+
+       <!-- Informações / Modal do Filme -->
+
+       <div class="modal fade" id="modal-filme1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-hero-0">
+              <!-- <img src="assets/diabo-de-cada-dia.png" /> -->
+              <div class="col-12 modal-hero-infos">
+                <button class="btn btn-lg btn-custom-white">
+                  <span class="mdi mdi-play"></span> Assistir
+                </button>
+                <a
+                  href="#"
+                  class="btn-custom-round btn btn-lg btn-light rounded-circle"
+                >
+                  <span class="mdi mdi-play"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-up text-white"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-down text-white"></span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-infos">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <!--DESCRIÇÃO-->  
+                    <p id='1' class="filme_descricao"></p>                  
+                    <p id='2' class="filme_descricao"></p>
+                  </div>
+  
+                  <div class="col-5">
+                    <p class="filme_elenco">
+                      Elenco:
+                          <text>
+                            Úrsula Corberó, ÁLvaro Morte, Itziar Ituño, mais
+                          </text>
+                      <br/><br/>
+                      Gêneros: 
+                          <text>
+                            Séries policiais, Espanhol, SUspense para TV
+                          </text>
+                      <br/><br/>
+                      Nota do Público: 
+                            <text id ='3'></text>
+                      <br/><br/>
+                      Data de lançamento: 
+                            <text id ='date'></text>
+                    </p>
+                   
+                  </div>
+
+                </div>
+                <p >
+
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Fim do Modal do Filme 1 -->
+     
+       <div class="modal fade" id="modal-filme2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-hero-1">
+              <!-- <img src="assets/diabo-de-cada-dia.png" /> -->
+              <div class="col-12 modal-hero-infos">
+                <button class="btn btn-lg btn-custom-white">
+                  <span class="mdi mdi-play"></span> Assistir
+                </button>
+                <a
+                  href="#"
+                  class="btn-custom-round btn btn-lg btn-light rounded-circle"
+                >
+                  <span class="mdi mdi-play"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-up text-white"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-down text-white"></span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-infos">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p id='4' class="filme_descricao"></p>                  
+                    <p id='5' class="filme_descricao"></p>
+                  </div>
+  
+                  <div class="col-5">
+                    <p class="filme_elenco">
+                      Elenco:
+                          <text>
+                            Simu Liu, Awkwafina, TOny Leung, Fala Chen
+                          </text>
+                      <br/><br/>
+                      Gêneros: 
+                          <text>
+                            Ação, FIlme de super-herói, Aventura, Fantasia
+                          </text>
+                      <br/><br/>
+                      Nota do Público: 
+                            <text id ='6'></text>
+                      <br/><br/>
+                      Data de lançamento: 
+                            <text id ='date2'></text>
+                    </p>
+                   
+                  </div>
+                </div>
+                <br />
+
+                
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Fim do Modal do Filme 2 -->
+
+       <div class="modal fade" id="modal-filme3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-hero-2">
+              <!-- <img src="assets/diabo-de-cada-dia.png" /> -->
+              <div class="col-12 modal-hero-infos">
+                <button class="btn btn-lg btn-custom-white">
+                  <span class="mdi mdi-play"></span> Assistir
+                </button>
+                <a
+                  href="#"
+                  class="btn-custom-round btn btn-lg btn-light rounded-circle"
+                >
+                  <span class="mdi mdi-play"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-up text-white"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-down text-white"></span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-infos">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p id='7' class="filme_descricao"></p>                  
+                    <p id='8' class="filme_descricao"></p>
+                  </div>
+  
+                  <div class="col-5">
+                    <p class="filme_elenco">
+                      Elenco:
+                          <text>
+                            John Cena, Pete Davidson, Daniela Melchior, Sylvester Stallone
+                          </text>
+                      <br/><br/>
+                      Gêneros: 
+                          <text>
+                            Ação, Comédia,Super-herói, Loucura, Aventura
+                          </text>
+                      <br/><br/>
+                      Nota do Público: 
+                            <text id ='9'></text>
+                      <br/><br/>
+                      Data de lançamento: 
+                            <text id ='date3'></text>
+                    </p>
+                   
+                  </div>
+                </div>
+                <br/>                
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Fim do Modal do Filme 3 -->
+
+       <div class="modal fade" id="modal-filme4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-hero-3">
+              <!-- <img src="assets/diabo-de-cada-dia.png" /> -->
+              <div class="col-12 modal-hero-infos">
+                <button class="btn btn-lg btn-custom-white">
+                  <span class="mdi mdi-play"></span> Assistir
+                </button>
+                <a
+                  href="#"
+                  class="btn-custom-round btn btn-lg btn-light rounded-circle"
+                >
+                  <span class="mdi mdi-play"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-up text-white"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-down text-white"></span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-infos">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p id='10' class="filme_descricao"></p>                  
+                    <p id='11' class="filme_descricao"></p>
+                  </div>
+  
+                  <div class="col-5">
+                    <p class="filme_elenco">
+                      Elenco:
+                          <text>
+                            Muita gente visse!
+                          </text>
+                      <br/><br/>
+                      Gêneros: 
+                          <text>
+                            Anime, Série de Televisão, História de super-herói
+                          </text>
+                      <br/><br/>
+                      Nota do Público: 
+                            <text id ='12'></text>
+                      <br/><br/>
+                      Data de lançamento: 
+                            <text id ='date4'></text>
+                    </p>
+                   
+                  </div>
+                </div>
+                <br />               
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Fim do Modal do Filme 4 -->
+
+       <div class="modal fade" id="modal-filme5">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-hero-4">
+              <!-- <img src="assets/diabo-de-cada-dia.png" /> -->
+              <div class="col-12 modal-hero-infos">
+                <button class="btn btn-lg btn-custom-white">
+                  <span class="mdi mdi-play"></span> Assistir
+                </button>
+                <a
+                  href="#"
+                  class="btn-custom-round btn btn-lg btn-light rounded-circle"
+                >
+                  <span class="mdi mdi-play"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-up text-white"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-down text-white"></span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-infos">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p id='13' class="filme_descricao"></p>                  
+                    <p id='14' class="filme_descricao"></p>
+                  </div>
+  
+                <div class="col-5">
+                    <p class="filme_elenco">
+                      Elenco:
+                      <text>
+                        Camila Cabello, NIcholas Galitzine, Billy Porter, Idina Menzel
+                      </text>
+                      <br/><br/>
+                      Gêneros: 
+                      <text>
+                        Romance, Fantasia, Drama, Infantil
+                          </text>
+                      <br/><br/>
+                      Nota do Público: 
+                            <text id ='15'></text>
+                      <br/><br/>
+                      Data de lançamento: 
+                            <text id ='date5'></text>
+                    </p>
+                   
+                  </div>
+
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Fim do Modal do Filme 5 -->
+
+
+       <div class="modal fade" id="modal-filme6">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-hero-5">
+              <!-- <img src="assets/diabo-de-cada-dia.png" /> -->
+              <div class="col-12 modal-hero-infos">
+                <button class="btn btn-lg btn-custom-white">
+                  <span class="mdi mdi-play"></span> Assistir
+                </button>
+                <a
+                  href="#"
+                  class="btn-custom-round btn btn-lg btn-light rounded-circle"
+                >
+                  <span class="mdi mdi-play"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-up text-white"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-custom-round border-white btn btn-lg rounded-circle opacity-50"
+                >
+                  <span class="mdi mdi-thumb-down text-white"></span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-infos">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p id='16' class="filme_descricao"></p>                  
+                    <p id='17' class="filme_descricao"></p>
+                  </div>
+  
+                  <div class="col-5">
+                    <p class="filme_elenco">
+                      Elenco:
+                          <text>
+                            Tom Ellis, Lauren German, Lesley-Ann, Kevin ALejandro
+                          </text>
+                      <br/><br/>
+                      Gêneros: 
+                          <text> 
+                            Mistério, Comédia dramática, Fantasia urbana
+                          </text>
+                      <br/><br/>
+                      Nota do Público: 
+                            <text id ='18'></text>
+                      <br/><br/>
+                      Data de lançamento: 
+                            <text id ='date6'></text>
+                    </p>
+                   
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        getContent()   
+        async function getContent() {  
+                   try {            
+                       const response = await fetch('http://localhost:4567/trending')                
+                       const data = await response.json()  
+                       const movies = data.results                  
+                       exibirNoFront(movies)
+                   } catch (error) {                
+                       console.log(error)
+                   }   
+               }     
+
+              function exibirNoFront(movies) {    
+                
+                    if (movies[0].name !== undefined) {
+                        let getName = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[0].name}</p>`                                                    
+                        document.getElementById('1').innerHTML = getName  
+                    } else {
+                        let getName = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[0].title}</p>`                                                    
+                        document.getElementById('1').innerHTML = getName  
+                    }                                      
+
+                    let getOverview = `<p style="color:grey;"> <strong>Sinopse:</strong> </p> <text>${movies[0].overview}</text>`                                                    
+                    document.getElementById('2').innerHTML = getOverview  
+
+                    let getVoteAverage = `${movies[0].vote_average}`                                                    
+                    document.getElementById('3').innerHTML = getVoteAverage 
+                    
+                    if (movies[0].first_air_date !== undefined) {
+                        let getReleaseDate = `${movies[0].first_air_date}`                                                    
+                        document.getElementById('date').innerHTML = getReleaseDate
+                    } else {
+                        let getReleaseDate = `${movies[0].release_date}`                                                    
+                        document.getElementById('date').innerHTML = getReleaseDate
+                    }
+                    
+                  
+
+
+                   
+                   if (movies[4].name !== undefined) {
+                        let getName3 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[4].name}</p>`                                                    
+                        document.getElementById('4').innerHTML = getName3  
+                    } else {
+                        let getName3 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[4].title}</p>`                                                    
+                        document.getElementById('4').innerHTML = getName3 
+                    }        
+           
+                    let getOverview3 = `<p style="color:grey;"> <strong>Sinopse:</strong> </p> <text>${movies[4].overview}</text>`                                                    
+                    document.getElementById('5').innerHTML = getOverview3  
+
+                    let getVoteAverage3 = `${movies[4].vote_average}`                                                    
+                    document.getElementById('6').innerHTML = getVoteAverage3
+
+                    if (movies[4].first_air_date !== undefined) {
+                        let getReleaseDate3 = `${movies[4].first_air_date}`                                                    
+                        document.getElementById('date2').innerHTML = getReleaseDate3
+                    } else {
+                        let getReleaseDate3 = `${movies[4].release_date}`                                                    
+                        document.getElementById('date2').innerHTML = getReleaseDate3
+                    }
+
+
+
+
+
+                    if (movies[6].name !== undefined) {
+                        let getName4 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[6].name}</p>`                                                    
+                        document.getElementById('7').innerHTML = getName4            
+                    } else {
+                        let getName4 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[6].title}</p>`                                                    
+                        document.getElementById('7').innerHTML = getName4    
+                    }
+                           
+
+                    let getOverview4 = `<p style="color:grey;"> <strong>Sinopse:</strong> </p> <text>${movies[6].overview}</text>`                                                    
+                    document.getElementById('8').innerHTML = getOverview4  
+
+                    let getVoteAverage4 = `${movies[6].vote_average}`                                                    
+                    document.getElementById('9').innerHTML = getVoteAverage4   
+
+                    
+                    if (movies[6].release_date !== undefined) {
+                        let getReleaseDat4 = `${movies[6].release_date}`                                                    
+                        document.getElementById('date3').innerHTML = getReleaseDat4
+                    } else {
+                        let getReleaseDat4 = `${movies[6].first_air_date}`                                                    
+                        document.getElementById('date3').innerHTML = getReleaseDat4
+                    }
+                    
+
+
+                   
+                    if (movies[12].name !== undefined) {
+                        let getName11 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[12].name}</p>`                                                    
+                        document.getElementById('10').innerHTML = getName11            
+                    } else {
+                        let getName11 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[12].title}</p>`                                                    
+                        document.getElementById('10').innerHTML = getName11    
+                    }
+           
+                    let getOverview11 = `<p style="color:grey;"> <strong>Sinopse:</strong> </p> <text>${movies[12].overview}</text>`                                                    
+                    document.getElementById('11').innerHTML = getOverview11
+
+                    let getVoteAverage11 = `${movies[12].vote_average}`                                                    
+                    document.getElementById('12').innerHTML = getVoteAverage11 
+
+                    if (movies[12].release_date !== undefined) {
+                        let getReleaseDat4 = `${movies[12].release_date}`                                                    
+                        document.getElementById('date4').innerHTML = getReleaseDat4
+                    } else {
+                        let getReleaseDat4 = `${movies[12].first_air_date}`                                                    
+                        document.getElementById('date4').innerHTML = getReleaseDat4
+                    }
+
+
+
+                    
+                    if (movies[14].name !== undefined) {
+                        let getName11 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[14].name}</p>`                                                    
+                        document.getElementById('13').innerHTML = getName11            
+                    } else {
+                        let getName11 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[14].title}</p>`                                                    
+                        document.getElementById('13').innerHTML = getName11    
+                    }         
+
+                    let getOverview12 = `<p style="color:grey;"> <strong>Sinopse:</strong> </p> <text>${movies[14].overview}</text>`                                                    
+                    document.getElementById('14').innerHTML = getOverview12 
+
+                    let getVoteAverage12 = `${movies[14].vote_average}`                                                    
+                    document.getElementById('15').innerHTML = getVoteAverage12   
+
+                    if (movies[14].release_date !== undefined) {
+                        let getReleaseDat4 = `${movies[14].release_date}`                                                    
+                        document.getElementById('date5').innerHTML = getReleaseDat4
+                    } else {
+                        let getReleaseDat4 = `${movies[14].first_air_date}`                                                    
+                        document.getElementById('date5').innerHTML = getReleaseDat4
+                    }
+                    
+                    
+
+
+                                       
+                    if (movies[11].name !== undefined) {
+                        let getName11 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[11].title}</p>`                                                    
+                        document.getElementById('16').innerHTML = getName11            
+                    } else {
+                        let getName11 = `<p style="color:grey;"> <strong>Título:</strong> </p> <p>${movies[11].title}</p>`                                                    
+                        document.getElementById('16').innerHTML = getName11    
+                    }         
+           
+                    let getOverview14 = `<p style="color:grey;"> <strong>Sinopse:</strong> </p> <text>${movies[11].overview}</text>`                                                    
+                    document.getElementById('17').innerHTML = getOverview14  
+
+                    let getVoteAverage14 = `${movies[11].vote_average}`                                                    
+                    document.getElementById('18').innerHTML = getVoteAverage14 
+
+                    if (movies[11].release_date !== undefined) {
+                        let getReleaseDat4 = `${movies[11].release_date}`                                                    
+                        document.getElementById('date6').innerHTML = getReleaseDat4
+                    } else {
+                        let getReleaseDat4 = `${movies[11].first_air_date}`                                                    
+                        document.getElementById('date6').innerHTML = getReleaseDat4
+                    }
+              }   
+     </script>
+       <!-- Fim do Modal do Filme 6 -->
+  </body>
+</html>
